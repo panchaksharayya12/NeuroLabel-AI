@@ -43,10 +43,12 @@ def create_report():
     doc.add_paragraph()
 
     # Metadata Box Table
-    meta_table = doc.add_table(rows=5, cols=2)
+    meta_table = doc.add_table(rows=7, cols=2)
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
         ("Product Name", "NeuroLabel AI"),
+        ("Live Production Website", "https://neuro-label-ai.vercel.app/"),
+        ("GitHub Repository", "https://github.com/panchaksharayya12/NeuroLabel-AI"),
         ("Organization", "NeuroNexa Technologies Inc. (Motto: 'Better Labels. Safer Patients.')"),
         ("Project Lead", "Rashmi Gowda (Project Lead, Regulatory Affairs & QA)"),
         ("Core Regulatory Standards", "EU MDR 2017/745, CDSCO Medical Device Rules 2017, FDA 21 CFR Part 11 & 801"),
@@ -212,15 +214,18 @@ def create_report():
     h6.runs[0].font.color.rgb = RGBColor(30, 58, 138)
 
     doc.add_paragraph(
-        "1. Backend Startup:\n"
+        "1. Live Production Deployment:\n"
+        "   Website: https://neuro-label-ai.vercel.app/\n"
+        "   GitHub Repository: https://github.com/panchaksharayya12/NeuroLabel-AI\n\n"
+        "2. Backend Local Startup:\n"
         "   cd backend\n"
         "   .\\venv\\Scripts\\Activate.ps1\n"
         "   python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload\n\n"
-        "2. Frontend Startup:\n"
+        "3. Frontend Local Startup:\n"
         "   cd frontend\n"
         "   npm run dev\n\n"
-        "3. Web Access:\n"
-        "   Frontend: http://localhost:5173\n"
+        "4. Local Access:\n"
+        "   Frontend Server: http://localhost:5173\n"
         "   Backend Docs: http://localhost:8000/docs"
     )
 

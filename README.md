@@ -8,8 +8,9 @@
 
 | Resource | Direct Link | Description |
 | :--- | :--- | :--- |
-| **Web Application** | **[http://localhost:5173](http://localhost:5173)** | Interactive Frontend UI matching the design specification |
+| **Live Production Website** | **[https://neuro-label-ai.vercel.app/](https://neuro-label-ai.vercel.app/)** | Live Production Deployment on Vercel |
 | **Project Report (.docx)** | **[Download Word Document](https://raw.githubusercontent.com/panchaksharayya12/NeuroLabel-AI/main/NeuroLabel_AI_Project_Report.docx)** • **[View on GitHub](https://github.com/panchaksharayya12/NeuroLabel-AI/blob/main/NeuroLabel_AI_Project_Report.docx)** | Full Technical and Regulatory Project Report |
+| **Local Development Web App** | **[http://localhost:5173](http://localhost:5173)** | Local Development Frontend Server |
 | **Interactive API Documentation** | **[http://localhost:8000/docs](http://localhost:8000/docs)** | FastAPI Swagger UI with live testing for all endpoints |
 | **ReDoc API Documentation** | **[http://localhost:8000/redoc](http://localhost:8000/redoc)** | Clean technical OpenAPI specification |
 | **Dashboard Data API** | **[http://localhost:8000/api/dashboard](http://localhost:8000/api/dashboard)** | Live JSON data payload powering the dashboard |
@@ -124,7 +125,8 @@ The UI replicates the enterprise AI dark theme specified in the product requirem
    npm run dev
    ```
 
-- **Frontend Application**: `http://127.0.0.1:5173`
+- **Live Production Deployment**: [https://neuro-label-ai.vercel.app/](https://neuro-label-ai.vercel.app/)
+- **Local Development Server**: `http://127.0.0.1:5173`
 
 ---
 
